@@ -14,5 +14,8 @@ export default {
   components: {
     HelloWorld,
   },
+  created() {
+    this.$store.dispatch('getPosts');
+  },
 };
 </script>
